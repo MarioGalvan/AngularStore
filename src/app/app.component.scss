@@ -1,0 +1,28 @@
+.box{
+  height:200px;
+  width: 200px;
+  overflow-y: scroll;
+  background-color: darksalmon;
+}
+
+.products--grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  div{
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    h2,p{
+      text-align: center;
+      margin:0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .products--grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

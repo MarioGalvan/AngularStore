@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  imgParent = '';
   title = 'TiendaAngular';
   image = 'https://source.unsplash.com/random';
   name = 'mario';
@@ -86,5 +87,9 @@ export class AppComponent {
 
   onRegister() {
     console.log('this.register', this.register);
+  }
+
+  onLoaded(img:string) {
+    console.log('Imagen cargada', img);
   }
 }
